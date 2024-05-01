@@ -18,4 +18,10 @@ public class GenericMethods {
         return Arrays.asList(array);
     }
 
+//    Commonly used type parameter names include:
+//    E: Element (used extensively by the Java Collections Framework)
+//    K: Key
+//    V: Value
+//    T: Type
+
 }
