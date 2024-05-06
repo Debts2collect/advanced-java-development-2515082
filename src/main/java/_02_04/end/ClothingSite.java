@@ -1,4 +1,4 @@
-package _02_05.before;
+package _02_04.end;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,26 +8,32 @@ public class ClothingSite {
     public static void main(String[] args) {
 
         ShirtItem shirtItem = new ShirtItem();
-        ShirtItem shirtItem2 = new ShirtItem();
+//        checkoutItem(shirtItem);
 
-        List<ShirtItem> clothingItems = new ArrayList<>();
+        JacketItem jacketItem = new JacketItem();
+//        checkoutItem(jacketItem);
+
+        List<ClothingItem> clothingItems = new ArrayList<>();
         clothingItems.add(shirtItem);
-        clothingItems.add(shirtItem2);
+        clothingItems.add(jacketItem);
 
         checkoutAllItems(clothingItems);
-        
     }
 
     static void checkoutItem(ClothingItem item) {
         System.out.println("Item purchased: " + item.getName() + ", price: " + item.getPrice());
     }
 
-    static void checkoutAllItems(List<? extends ClothingItem> clothingItems) {
+    static void checkoutAllItems(List<ClothingItem> clothingItems) {
+
+        double totalPrice = 0.0;
 
         for (ClothingItem clothingItem : clothingItems) {
             checkoutItem(clothingItem);
+            totalPrice += clothingItem.getPrice();
         }
 
+        System.out.println("Total Amount: " + totalPrice);
     }
 
 }
