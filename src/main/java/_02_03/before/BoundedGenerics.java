@@ -18,5 +18,4 @@ public class BoundedGenerics {
         return Arrays.asList(array);
     }
 
-
 }
