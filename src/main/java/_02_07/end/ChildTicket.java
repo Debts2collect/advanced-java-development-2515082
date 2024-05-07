@@ -2,7 +2,6 @@ package _02_07.end;
 
 public class ChildTicket extends Ticket {
 
-
     @Override
     public int getPrice() {
         return 5;

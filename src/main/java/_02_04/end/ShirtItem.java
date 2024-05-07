@@ -1,4 +1,4 @@
-package _02_05.end;
+package _02_04.end;
 
 public class ShirtItem extends ClothingItem {
 

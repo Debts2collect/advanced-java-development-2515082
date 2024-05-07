@@ -1,4 +1,4 @@
-package _02_05.end;
+package _02_04.end;
 
 public class JacketItem extends ClothingItem {
 
@@ -11,4 +11,5 @@ public class JacketItem extends ClothingItem {
     String getName() {
         return "Jacket";
     }
+
 }
